@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>No more need to speak things that you dont want to speak at the office!</title>
+    <title>No more need to speak things that you dont want to at the office!</title>
     <style type="text/css">
       .btn{
         display:block;
@@ -18,21 +18,30 @@
 
         text-align:center;
         color: white !important;
-        font-size:30px;
-          box-shadow: -5px 9px #999;
+        font-size:2.3em;
         margin: 15px;
         border-radius: 50%;
+        border: 20px solid black;
         padding-top: 20%;
+          background-blend-mode: screen;
+
 
       }
      
       .col{
         /*padding-: 0px;*/
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-align-content: center;
+        align-content: center;
       }
       .btn:active {
         background-color: #3e8e41;
-        box-shadow: 2px 5px #666;
-        transform: translateY(5);
+        box-shadow: 0 2px #666;
+        border:30px solid black;
+        transform: translate();
       }
       .btn:focusout{
         height: 50vh;
@@ -46,6 +55,44 @@
         border-radius: 50%;
 
       }
+      body{
+        background-image: url("bg.jpg");
+      }
+
+      .red-btn{
+        background: red;
+      }
+
+      .red-button:active{
+        background-color: #841e1e;
+      }
+
+      .green-btn{
+        background: green;
+      }
+
+      .green-btn:active{
+        background-color: #216f21;
+      }
+      
+
+      .blue-btn{
+        background: blue;
+      }
+
+      .blue-btn:active{
+        background-color: #351f8a;
+      }
+
+      .yellow-btn{
+        background: #e1e10b;
+      }
+
+      .yellow-btn:active{
+        background-color: #727329;
+      }
+
+
     </style>
     <script type="text/javascript">
       function playNo(){
@@ -70,25 +117,25 @@
   <body>
     <div class="container">
       <div class="row">
-          <div class="col col-sm-4 col-md-6 mx-auto">
-            <a class="btn no-btn align-middle" style="background: red" onclick="playNo()">
+          <div class="d-flex justify-content-center col col-sm-4 col-md-6 mx-auto">
+            <a class="btn no-btn align-middle red-btn"  onclick="playNo()">
               NO
             </a>
           </div>
-          <div class="col col-sm-4 col-md-6 align-middle">
-            <a class="btn no-btn align-middle" style="background: green" onclick="playYes()">
+          <div class="d-flex justify-content-center col col-sm-4 col-md-6 align-middle">
+            <a class="btn no-btn align-middle green-btn" onclick="playYes()">
               YES
             </a>
           </div>
       </div>
       <div class="row">
-         <div class="col col-sm-4 col-md-6 align-middle">
-            <a class="btn no-btn align-middle" style="background: #e1e10b" onclick="playWohoo()">
+         <div class="d-flex justify-content-center col col-sm-4 col-md-6 align-middle">
+            <a class="btn no-btn align-middle yellow-btn" onclick="playWohoo()">
               Wohoo
             </a>
           </div>
-          <div class="col col-sm-4 col-md-6 align-middle">
-            <a class="btn no-btn align-middle" style="background: black" onclick="playBla()">
+          <div class="d-flex justify-content-center col col-sm-4 col-md-6 align-middle">
+            <a class="btn no-btn align-middle blue-btn" onclick="playBla()">
               Blah Blah Blah
             </a>
           </div>
