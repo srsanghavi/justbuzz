@@ -68,11 +68,20 @@
 
       }
 
-      body{
+      #top{
         background-image: url("bg.jpg");
+        padding: 30px;
+        position: fixed;
+        top:0px;
+        left:0px;
+        width: 100%;
       
       }
 
+      #content{
+      	position: relative;
+      	top:98vh;
+      }
       .btn:hover{
         /*cursor: url("cursor.png"),auto;*/
 
@@ -145,7 +154,8 @@
     </script>
   </head>
   <body>
-    <div class="container">
+  	<section id="top">
+    <div  class="container">
       <div class="row">
           <div class="d-flex justify-content-center col col-sm-4 col-md-6 mx-auto">
             <a class="btn no-btn align-middle red-btn"  onclick="playNo()">
@@ -176,6 +186,16 @@
           </div>
       </div>
     </div>
+	</section>
+	<section id="content">
+    <nav class="navbar navbar-dark bg-dark justify-content-center" >
+	  <a class="navbar-brand" href="#">
+	    <h1 style="text-align: center;letter-spacing: 1px;">JustBuzz</h1>
+	    <p style="letter-spacing: 1px;font-weight: bold;font-size: 10px;margin-top: -13px">DON'T SPEAK, JUST BUZZ!</p>
+	  </a>
+	</nav>
+	</section>
+	dadad
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
